@@ -1,0 +1,257 @@
+h1{border: lightskyblue ;
+    background-color: lightblue;
+    color: white;
+    width: 1200px;
+    text-align: center;}
+    
+    
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(27, 170, 231);
+    font-size: medium;
+}
+
+header img{
+    float: right;
+}
+body{
+    background-color:rgb(217, 238, 241);
+}
+div img{
+    width: 50px;
+    
+   
+    margin: 20px;
+
+   
+}
+select{width: 150px;
+color: rgb(107, 193, 221);
+border: solid  blue;
+border-radius:15px ;
+text-align: center;}
+
+
+header p{
+    font-size: medium;
+    font-weight: 200;
+}
+
+.day{
+    border: solid rgb(114, 194, 220);
+    border-radius:15px;
+    background-color: white;
+    width: 150px;
+
+    
+
+    display: inline-block;
+    height:150px;
+    overflow: hidden;
+    
+
+
+
+}
+header p{
+    font-size: medium;
+}
+.report{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(98, 202, 223);
+    text-align: center;
+}
+#report{
+    font-size: 30px;
+    color: rgb(98, 202, 223);
+    float: right;
+}
+#reportT{
+    font-size: 30px;
+    color: rgb(98, 202, 223);
+    float: right;
+}
+#reportW{
+    font-size: 30px;
+    color: rgb(98, 202, 223);
+    float: right;
+}
+#reportTH{
+    font-size: 30px;
+    color: rgb(98, 202, 223);
+    float: right;
+}
+#reportF{
+    font-size: 30px;
+    color: rgb(98, 202, 223);
+    float: right;
+}
+.Now{
+
+  width:400px;
+  height: 800px;
+  background-color: rgba(174, 216, 234, 0.5);
+  float:right; 
+  position:relative;
+  bottom: 1000px;
+  left: 120px;
+  border-radius: 15px;
+
+
+  
+
+
+}
+#forcast1{
+    width:100px;
+    position:relative;
+    top: 60px;
+    left: 140px;
+    
+}
+#morning{
+    width: 340px;
+    height:65px;
+    border-radius: 15px;
+    position: relative;
+    top:80px;
+    background-color: aliceblue;
+    left: 40px;
+    
+
+    
+}
+.mornimages{
+    overflow: hidden;
+    position: relative;
+    bottom:70px;
+   
+    
+}
+.days{
+    text-align: center;
+    color:rgb(68, 163, 194) ;
+    font-style: italic;
+}
+#afternoon{
+    width: 340px;
+    height:65px;
+    border-radius: 15px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    bottom: 20px;
+
+    
+    background-color: aliceblue;
+}
+#evening{
+    width: 340px;
+    height:65px;
+    border-radius: 15px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    bottom: 30px;
+
+    
+    background-color: aliceblue;
+}
+#current{
+    text-align: center;
+    position: relative;
+    top:20px;
+    font-size: 25px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.time{
+    color: rgb(23, 161, 225);
+    font-size: 30px;
+    text-align: center;
+}
+#picture{
+
+    position: relative;
+    top: 10px;
+    border-radius: 15px;
+    float:center;
+    width:140px;
+    height: 100px;
+    overflow: hidden;
+    
+    
+}
+.elements{
+    border: solid rgb(114, 194, 220);
+    border-radius:15px;
+    background-color: white;
+    width: 180px;
+
+    
+
+    display: inline-block;
+    height:150px;
+    overflow: hidden;}
+#elementsU{
+    color: darkgrey;
+    text-align: center;
+}
+#elementsW{
+    color: darkgrey;
+    text-align: center;
+}
+#elementsP{
+    color: darkgrey;
+    text-align: center;
+}
+#elementsH{
+    color: darkgrey;
+    text-align: center;
+}
+#graph{
+    position: relative;
+    width: 500px;
+    left: 380px;
+    bottom: 450px;
+    height: 350px;
+    border-radius: 7px;
+}
+#maps{position: relative;
+
+     right: 600px;
+     width: 300px;
+     display: inline;
+     border-radius: 50%;
+     bottom: 30px;
+     height: 150px;
+     }
+
+
+ .sun{
+        border: solid rgb(243, 182, 14);
+        background-color:white;
+        width: 150px;
+        
+        position: relative;
+        top:30px;
+        height:80px;
+        border-radius: 6px;
+        
+
+     }
+#sun{text-align: center;
+    color : orange;}
+
+ .rr{
+        position: relative;
+        bottom: 40px;
+    }
+
+#tempconvert{
+    font-style: italic;
+    color: rgb(105, 167, 222);
+    border: solid white;
+}
