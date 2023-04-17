@@ -28,7 +28,6 @@ function getData(){
     .then((response) => {
         var uvIndexColor;
         var data = response.data[inputCity];
-        // var currentDate;
         const currentDate = new Date();
         const day = currentDate.getDate();
         const month = currentDate.getMonth() + 1;
