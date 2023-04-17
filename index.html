@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <header class="container-fluid text-center text-white bg-dark p-2">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row"> 
+      <div class="col-lg-2 bg-light">
+        <h5 class="mt-1">Select a City:</h5>
+        <div class="input-group mb-3">
+          <select id="selectCity" class="form-select mr-2" aria-label="Default select example">
+            <option value="Toronto" selected>Toronto</option>
+            <option value="Ottawa">Ottawa</option>
+            <option value="Hamilton">Hamilton</option>
+            <option value="Brampton">Brampton</option>
+            <option value="Mississauga">Mississauga</option>
+          </select>
+          <button  class="btn btn-primary" onclick="getData()" type="button" id="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div> 
+      </div>
+
+      <div class="col-lg-10">
+        <!-- current weather -->
+        <div class="row">
+          <div class="col card m-3">
+            <div class="card-body">
+              <h2 id="city"></h2>
+              <h6 id="date"></h6>
+              <img id="weather-icon" />
+              <p class="pl-2">Temperature: <span id="temperature"></span></p>
+              <p class="pl-2">Humidity: <span id="humidity"></span></p>
+              <p class="pl-2">Wind Speed: <span id="wind-speed"></span></p>
+              <p class="pl-2">UV Index: <span id="uv-index" class="p-1"></span></p>
+            </div>
+          </div>
+        </div>   <!-- row -->
+
+        <!-- 5 day forecast -->
+        <div class="forecast m-3">
+          <h2>5 Day Forecast</h2>
+          <div class="row justify-content-around">
+          
+            <div class="col-md-2 card p-0 day-1">
+              <div class="card-body">
+                <p class="fiveDay-date"></p>
+                <img class="fiveDay-img mb-2" />
+                <p>Temp: <span class="fiveDay-temp"></span></p>
+                <p>Humidity: <span class="fiveDay-humid"></span></p>
+                <p>Wind Speed: <span class="fiveDay-wind"></span></p>
+                <p>UV Index: <span class="fiveDay-uv"></span></p>
+              </div>
+            </div>
+            
+            <div class="col-md-2 card p-0 day-2">
+              <div class="card-body">
+                <p class="fiveDay-date"></p>
+                <img class="fiveDay-img mb-2" />
+                <p>Temp: <span class="fiveDay-temp"></span></p>
+                <p>Humidity: <span class="fiveDay-humid"></span></p>
+                <p>Wind Speed: <span class="fiveDay-wind"></span></p>
+                <p>UV Index: <span class="fiveDay-uv"></span></p>
+              </div>
+            </div>
+          
+            <div class="col-md-2 card p-0 day-3">
+              <div class="card-body">
+                <p class="fiveDay-date"></p>
+                <img class="fiveDay-img mb-2" />
+                <p>Temp: <span class="fiveDay-temp"></span></p>
+                <p>Humidity: <span class="fiveDay-humid"></span></p>
+                <p>Wind Speed: <span class="fiveDay-wind"></span></p>
+                <p>UV Index: <span class="fiveDay-uv"></span></p>
+              </div>
+            </div>
+      
+            <div class="col-md-2 card p-0 day-4">
+              <div class="card-body">
+                <p class="fiveDay-date"></p>
+                <img class="fiveDay-img mb-2" />
+                <p>Temp: <span class="fiveDay-temp"></span></p>
+                <p>Humidity: <span class="fiveDay-humid"></span></p>
+                <p>Wind Speed: <span class="fiveDay-wind"></span></p>
+                <p>UV Index: <span class="fiveDay-uv"></span></p>
+              </div>
+            </div>
+       
+            <div class="col-md-2 card p-0 day-5">
+              <div class="card-body">
+                <p class="fiveDay-date"></p>
+                <img class="fiveDay-img mb-2" />
+                <p>Temp: <span class="fiveDay-temp"></span></p>
+                <p>Humidity: <span class="fiveDay-humid"></span></p>
+                <p>Wind Speed: <span class="fiveDay-wind"></span></p>
+                <p>UV Index: <span class="fiveDay-uv"></span></p>
+              </div>
+            </div>
+         
+        </div> <!-- row -->
+      </div> <!-- forecast -->
+
+    </div>   
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
+
+
+    <!-- <h2>City</h2>
+    <div >
+      <img id ="maps" src="imgs/Toronto.png"/>
+    </div>
+                
+    <select id= "City" onchange="Area()" name="City">  
+      <option value="Scarbrough">Scarbrough</option>
+      <option value ="Brampton" >Brampton</option>
+      <option value="Toronto" selected="selected">Toronto</option>
+      <option value= "Oshuwa">Oshuwa</option>
+      <option value="Ajax">Ajax</option>
+    </select>
+    <img id="picture" src="https://media.tacdn.com/media/attractions-content--1x-1/0b/e2/b8/7a.jpg" > </img>
+    
+    <h2> Weather forecast</h2>
+
+    <div onclick="Monday()" id="mon" class="day">
+      <p class="report"> Monday  </p>
+      <img id= pictureM src ="imgs/sunny.png" width="100"/>
+      <p id="report"> 13 &#x25CB;</p>
+    </div> 
+
+    <div onclick ="Tuesday()"id="tue" class="day">
+      <p class="report"> Tuesday  </p>
+      <img id= pictureT src ="imgs/sunny.png"/>
+      <p id="reportT"> 5 &#x25CB;</p>  
+    </div>
+      
+    <div onclick= "Wenesday()"id="wed" class="day">
+      <p class="report"> Wednesday  </p>
+      <img id="pictureW" src ="imgs/rainycloud.png"/>
+      <p id="reportW"> 2 &#x25CB;</p>
+    </div>
+    
+    <div onclick="Thursday()" id="thurs"  class="day">
+      <p class="report"> Thursday </p>
+      <img id="pictureTH" src ="imgs/sun.png"/>
+      <p id="reportTH"> 7 &#x25CB;</p>
+    </div>
+
+    <div onclick="Friday()" id="fri" class="day">
+      <p class="report"> Friday <br>  </p>
+      <img id="pictureF" src ="imgs/windy.png"/>
+      <p id="reportF"> -3 &#x25CB;</p>
+
+    </div>
+
+    <div>
+      <input onclick ="Converter()" id= tempconverter type="checkbox"/>press to convert temp to Fahrenheit </c>
+    </div>
+
+    <div class="elements">
+      <img src="imgs/uvrays.png">
+      <p id="elementsU">UV Rays<br>3-5</p>
+
+    </div>
+
+    <div class="elements">
+      <img src="imgs/wind.png">
+      <p id="elementsW">Wind <br>7km/h </p>
+
+    </div>
+
+    <div class="elements">
+      <img src="imgs/humidity.png">
+      <p id="elementsH">Humidity <br>40% </p>
+
+    </div>
+
+    <div class="elements">
+      <img src="imgs/percipa.png">
+      <p id="elementsP">Percipatation<br>0%</p>
+    </div>
+
+    <div class="sun" id="sun"><p id="time">Sunrise 6:40 am</p><img class="rr" src="imgs/sunrise.png"></div>
+    <div class="sun" id="sun"><p id="timeSS">Sunset 7:40 pm</p><img class="rr" src="imgs/sunset.png"></div>
+    <div><img id="graph" src="imgs/lineChart.png" /></div>
+
+    <div class= "Now">
+      <img id= "forcast1" src="imgs/brightsun.png"/>
+      <p id="current">Monday 13&#x25CB</p>
+      <div id="morning">
+        <p id="morn" class="days">Morning <br> 5&#x25CB;</p>
+        <img id="imageM" class="mornimages" src="imgs/sun.png"/>
+        <div id="afternoon">
+          <p id="aft" class="days">Afternoon <br> 14&#x25CB;</p>
+          <img class="mornimages" id=imageA src="imgs/sunny.png"/>
+          <div id="evening">
+            <p id ="eve" class="days">Evening <br> 3&#x25CB; </p>
+            <img class="mornimages" id=imagesE src="imgs/cloudymoon.png"/>
+          </div>
+      </div>
+    </div> -->
+
+  </body>
+</html>
