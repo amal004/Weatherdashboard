@@ -10,7 +10,6 @@ h2{
     color:rgb(27, 170, 231);
     font-size: medium;
 }
-
 header img{
     float: right;
 }
@@ -19,12 +18,9 @@ body{
 }
 div img{
     width: 50px;
-    
-   
     margin: 20px;
-
-   
 }
+
 select{width: 150px;
 color: rgb(107, 193, 221);
 border: solid  blue;
@@ -43,14 +39,9 @@ header p{
     background-color: white;
     width: 150px;
 
-    
-
     display: inline-block;
     height:150px;
     overflow: hidden;
-    
-
-
 
 }
 header p{
@@ -93,13 +84,9 @@ header p{
   background-color: rgba(174, 216, 234, 0.5);
   float:right; 
   position:relative;
-  bottom: 1000px;
-  left: 120px;
+  bottom: 1100px;
+  left: 80px;
   border-radius: 15px;
-
-
-  
-
 
 }
 #forcast1{
@@ -221,7 +208,7 @@ header p{
 }
 #maps{position: relative;
 
-     right: 600px;
+     right: 598px;
      width: 300px;
      display: inline;
      border-radius: 50%;
@@ -254,4 +241,84 @@ header p{
     font-style: italic;
     color: rgb(105, 167, 222);
     border: solid white;
+}
+#numbers{
+    color: darkgrey;
+    
+    text-align: center;
+    position: relative; 
+    bottom: 15px
+ 
+
+}
+.red{
+   
+   
+    background-color: rgb(201, 53, 53);
+    width: 25px;
+    float:right;
+    height: 30px;
+   
+
+
+    display: inline-block;
+    overflow: hidden;}
+
+.orange{
+   
+   
+        background-color: rgb(253, 142, 7);
+        width: 25px;
+        float:right;
+        height: 30px;
+       
+    
+    
+        display: inline-block;
+        overflow: hidden;}
+.yellow{
+   
+   
+        background-color: rgb(228, 228, 18);
+        width: 25px;
+        float:right;
+        height: 30px;
+        display: inline-block;
+        overflow: hidden;}
+.green{
+   
+   
+        background-color: green;
+        width: 25px;
+        float:right;
+        height: 30px;
+        display: inline-block;
+        overflow: hidden;}
+        
+
+    
+
+#PiChart{
+    overflow: none;
+
+    position: relative;
+    border-radius: 15px;
+    left: 400px; 
+    overflow: auto;
+
+    width: 250px;
+    bottom: 90px
+    
+    
+}
+.TextUV{
+    
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.UVtext{
+    color: rgb(93, 172, 236);
+    font-size: 10px;
+    float: right
 }
