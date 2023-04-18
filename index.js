@@ -32,6 +32,7 @@ function getData(){
         const day = currentDate.getDate();
         const month = currentDate.getMonth() + 1;
         const year = currentDate.getFullYear();
+        var chechbox=document.getElementById("check")
 
         document.getElementById("city").innerHTML = inputCity;
         document.getElementById("date").innerHTML =  " (" + month + "/" + day + "/" + year + ") ";
@@ -40,6 +41,10 @@ function getData(){
         document.getElementById("humidity").innerHTML = data.humidity + "%";
         document.getElementById("wind-speed").innerHTML = data.wind_speed + " MPH";
         document.getElementById("uv-index").innerHTML = data.uv_index;
+        //convert temperature 
+        if(chechbox.checked==true){
+            document.getElementById("temperature").innerHTML = data.celsius + "&#176C";
+        }
 
         uvIndexColor = setUVIndexColor(data.uv_index);
         document.getElementById("uv-index").setAttribute("style", `background-color:${uvIndexColor};`);

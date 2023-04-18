@@ -39,7 +39,9 @@ app.get("/weather", (req, res) => {
         "temperature": 69,
         "humidity": 44,
         "wind_speed": 13.6,
-        "uv_index": 5.77
+        "uv_index": 5.77,
+        "celsius": 20.5
+
       }
     ,
     "Ottawa": 
@@ -50,7 +52,10 @@ app.get("/weather", (req, res) => {
         "temperature": 76,
         "humidity": 43,
         "wind_speed": 9.63,
-        "uv_index": 6.38
+        "uv_index": 6.38,
+        "celsius": 24.5
+
+
       }
     ,
     "Hamilton": 
@@ -61,7 +66,9 @@ app.get("/weather", (req, res) => {
         "temperature": 51,
         "humidity": 70,
         "wind_speed": 10.4,
-        "uv_index": 6.64
+        "uv_index": 6.64,
+        "celsius": 10.5
+
       }
     ,
     "Brampton": 
@@ -72,7 +79,8 @@ app.get("/weather", (req, res) => {
         "temperature": 68,
         "humidity": 47,
         "wind_speed": 15.1,
-        "uv_index": 5.76
+        "uv_index": 5.76,
+        "celsius": 20
       }
     ,
     "Mississauga": 
@@ -83,7 +91,8 @@ app.get("/weather", (req, res) => {
         "temperature": 60,
         "humidity": 80,
         "wind_speed": 15.0,
-        "uv_index": 7.24
+        "uv_index": 7.24,
+        "celsius": 15.5
       }
     
   };
